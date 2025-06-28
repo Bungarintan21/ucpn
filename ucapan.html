@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9 Bulan Bersamamu ❤️</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #ffeef8 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        .title-font {
+            font-family: 'Pacifico', cursive;
+        }
+        .heart {
+            animation: heartbeat 1.5s infinite;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.1); }
+            50% { transform: scale(1); }
+            75% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .message-box {
+            transform: scale(0);
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            opacity: 0;
+            border: 2px solid #f9a8d4;
+            background: linear-gradient(135deg, #fff9fb 0%, #ffffff 100%);
+        }
+        .message-box.show {
+            transform: scale(1);
+            opacity: 1;
+        }
+        .polaroid {
+            background: white;
+            padding: 1rem 1rem 2rem 1rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transform: rotate(-2deg);
+            transition: all 0.3s ease;
+        }
+        .polaroid:hover {
+            transform: rotate(0deg) scale(1.05);
+        }
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #f00;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center p-6 text-pink-800">
+    <div class="text-center max-w-3xl w-full">
+        <div class="flex justify-center mb-6">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/71b922b6-6ad4-4923-990e-cdd89e4326be.png" alt="Close-up of a couple holding hands with soft lighting, wedding rings visible" class="rounded-full border-4 border-pink-200 w-32 h-32 object-cover" />
+        </div>
+        
+        <h1 class="title-font text-4xl md:text-5xl mb-4">
+            <span class="heart inline-block">❤️</span> 9 Bulan Bersamamu <span class="heart inline-block">❤️</span>
+        </h1>
+        
+        <p class="text-lg mb-8">Setiap hari bersamamu adalah anugerah yang tak terhingga</p>
+        
+        <div class="bg-white rounded-xl p-6 shadow-lg mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Countdown to Our Anniversary</h2>
+            <div class="flex justify-center gap-4" id="countdown">
+                <div class="text-center">
+                    <div class="text-3xl font-bold" id="days">00</div>
+                    <div class="text-sm">Hari</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold" id="hours">00</div>
+                    <div class="text-sm">Jam</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold" id="minutes">00</div>
+                    <div class="text-sm">Menit</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold" id="seconds">00</div>
+                    <div class="text-sm">Detik</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <div class="polaroid">
+                <img src="kenangan.jpg" />
+                <p class="text-center">Kenangan Indah Bersamamu</p>
+            </div>
+            <div class="polaroid">
+                <img src="momen.jpg" />
+                <p class="text-center">Momen Sederhana yang Berarti</p>
+            </div>
+        </div>
+        
+        <button id="romanticBtn" class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-full text-lg transform hover:scale-105 transition-all duration-300 shadow-lg mb-8">
+            Klik untuk Pesan Spesial
+        </button>
+        
+        <div class="message-box bg-white rounded-xl p-6 shadow-lg max-w-2xl mx-auto relative" id="romanticMessage">
+            <div class="absolute top-0 left-0 w-full h-full overflow-hidden" id="confettiContainer"></div>
+            <h2 class="text-2xl font-semibold mb-4">Untuk Kamu yang Tercinta...</h2>
+            <p class="mb-4">Di setiap detik dari 9 bulan ini, kau telah membuat hatiku berbunga-bunga dengan cintamu.</p>
+            <p class="mb-4">Bersamamu, waktu berlalu terlalu cepat tapi kenangannya tak pernah pudar sedikit pun.</p>
+            <p class="mb-4">Kau adalah mimpi yang menjadi nyata, doa yang terkabul, dan harapan yang terus mekar.</p>
+            <p class="mb-4">Setiap momen bersamamu terasa seperti halaman baru dalam buku cinta terindah yang pernah kutulis.</p>
+            <p class="mb-4">Tak ada kata yang cukup untuk menggambarkan betapa berartinya dirimu dalam hidupku.</p>
+            <p class="mb-4">Kau mengajariku arti cinta sejati - tanpa syarat, tulus, dan abadi.</p>
+            <p class="mb-4">Di mataku, kau sempurna dengan segala kelebihan dan kekuranganmu.</p>
+            <p class="mb-4">Aku berjanji akan terus mencintaimu lebih dalam, lebih kuat, dan lebih tulus setiap harinya.</p>
+            <p class="font-medium text-center text-pink-600 mt-4">
+                Aku mencintaimu lebih dari kemarin,<br>
+                tapi tak sebanyak besok.<br>
+                Selamat hari jadian bulan ke-9, sayangku ❤️
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Set anniversary date (next 9 months from today)
+        const anniversaryDate = new Date();
+        anniversaryDate.setMonth(anniversaryDate.getMonth() + 1); // Change to your actual anniversary date
+        anniversaryDate.setHours(0, 0, 0, 0);
+        
+        // Countdown timer
+        function updateCountdown() {
+            const now = new Date();
+            const diff = anniversaryDate - now;
+            
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('days').textContent = days.toString().padStart(2, '0');
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+        
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+        
+        // Romantic button with enhanced effects
+        document.getElementById('romanticBtn').addEventListener('click', function() {
+            const messageBox = document.getElementById('romanticMessage');
+            messageBox.classList.toggle('show');
+            
+            if (messageBox.classList.contains('show')) {
+                createConfetti();
+                this.innerHTML = '💖 Tutup Pesan Cinta 💖';
+                
+                // Typewriter effect for paragraphs
+                const paragraphs = messageBox.querySelectorAll('p');
+                paragraphs.forEach((p, index) => {
+                    const originalText = p.textContent;
+                    p.textContent = '';
+                    setTimeout(() => {
+                        let i = 0;
+                        const typing = setInterval(() => {
+                            if (i < originalText.length) {
+                                p.textContent += originalText.charAt(i);
+                                i++;
+                            } else {
+                                clearInterval(typing);
+                            }
+                        }, 30);
+                    }, index * 1000);
+                });
+            } else {
+                this.innerHTML = '✨ Klik untuk Pesan Cinta ✨';
+            }
+        });
+        
+        // Create confetti effect
+        function createConfetti() {
+            const container = document.getElementById('confettiContainer');
+            container.innerHTML = '';
+            
+            const colors = ['#ff0000', '#ff00aa', '#ff6600', '#ffcc00', '#00ff00', '#0099ff', '#6600ff'];
+            
+            for (let i = 0; i < 100; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.left = Math.random() * 100 + '%';
+                confetti.style.top = '-10px';
+                confetti.style.opacity = '0';
+                
+                container.appendChild(confetti);
+                
+                // Animate confetti
+                setTimeout(() => {
+                    confetti.style.opacity = '1';
+                    confetti.style.transform = `rotate(${Math.random() * 360}deg) translate(${Math.random() * 100 - 50}px, ${window.innerHeight}px)`;
+                    confetti.style.transition = `transform ${Math.random() * 3 + 2}s ease-out, opacity ${Math.random() * 2 + 1}s`;
+                    
+                    setTimeout(() => {
+                        confetti.style.opacity = '0';
+                    }, 2000);
+                }, Math.random() * 500);
+            }
+        }
+    </script>
+</body>
+</html>
+
